@@ -431,7 +431,7 @@ describe('Generator', () => {
       const t = () => new Generator('testTemplate', __dirname, {
         url: 'some.url.com',
         privateKey: 'some.key'
-        
+
       });
       expect(t).toThrow('These options are not supported by the generator: privateKey');
     });
